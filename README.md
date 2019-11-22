@@ -10,6 +10,6 @@
 * #### 作業一: Predicting Sports Winners with Decision Trees
   > ##### [HW1](/HW1/HW1.ipynb): 以平均氣壓、溫度、濕度、風速預測是否下雨
   > ##### 資料來源：[行政院環境保護署環境資源資料庫](https://erdb.epa.gov.tw/FileDownload/FileDownload.aspx)
-* #### 作業二: Extracting Features with Transformers
-  > ##### [HW2](/HW2/HW2.ipynb): 觀察PTT韓劇版與日劇版的內文分析
+* #### 作業二&作業三: Extracting Features with Transformers & PCA
+  > ##### [HW2&3](/HW2&3/HW2&3.ipynb): 觀察PTT韓劇版與日劇版的內文分析
  
