@@ -167,7 +167,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">比較其他同區當選人</h3>
-            <div class="subheading mb-3">A. 從收入來看¶</div>
+            <div class="subheading mb-3">A. 從收入來看</div>
             <p>兩千萬，才能選議員嗎？</p>
             <h6>可以看到許多候選人基本上都是無限上綱的在收政治獻金</h6>
             <img src="./fig/7.png" width="100%">
@@ -178,7 +178,7 @@
             <p>徐巧芯同樣為松山區優秀候選人，曾與呱吉一同舉辦肥皂箱演講</p>
             <img src="./fig/9.png" width="100%">
             <div class="subheading mb-3">B. 從支出來看</div>
-            <h6>如同呱吉所說，打一場選戰要花一千萬，到底是在為人民還是為了拿這些錢來花？¶</h6>
+            <h6>如同呱吉所說，打一場選戰要花一千萬，到底是在為人民還是為了拿這些錢來花？</h6>
             <img src="./fig/10.png" width="100%">
             <div class="subheading mb-3">(1) 支出項目</div>
             <p>幾乎所有候選人都花費了大量的金錢在宣傳方面，並且集會其實也有部分是宣傳型的集會，但是宣傳費如此高昂是否有收到實質的效果其實不是絕對</p>
@@ -198,7 +198,7 @@
             <div class="subheading mb-3">A. 從收入來看</div>
             <p>可以發現政治獻金的收入金額數量跟政黨無絕對的關係</p>
             <img src="./fig/14.png" width="100%">
-            <div class="subheading mb-3">(1) 從收入項目來看¶</div>
+            <div class="subheading mb-3">(1) 從收入項目來看</div>
             <p>同樣跟收不收營利事業的錢也有很大關係，收了錢，就要幫忙喬事情</p>
             <img src="./fig/15.png" width="100%">
             <div class="subheading mb-3">B. 從支出來看</div>
@@ -236,7 +236,7 @@
       <div class="w-100">
         <div style="position: -webkit-sticky;width: 100%;height: 80px;background-color: #f8bb2c;top: 0;font-size: 28px; color:#FFFFFF;">
           有人說票都是來自粉絲，是真的嗎?
-          <div style="font-size: 24px;">將粉絲轉換為實際投票，真的很多嗎？</div>
+          <div style="font-size: 24px;">「將粉絲轉換為實際投票，真的很多嗎？」</div>
         </div>
         <div id='201' style="height: 80px;font-size: 8px;color: #FFFFFF;"></div>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -269,7 +269,7 @@
               粉絲投票比例：13.59%<br>
               也才佔不到15%
             </p>
-            <h6>我們可以推估得知以呱吉的得票數來說，肯定有超過一半以上的票來自其他非粉絲選民，因此我們接下來就來看看呱吉到底為了松山區的選民做了哪些事情¶</h6>
+            <h6>我們可以推估得知以呱吉的得票數來說，肯定有超過一半以上的票來自其他非粉絲選民，因此我們接下來就來看看呱吉到底為了松山區的選民做了哪些事情</h6>
           </div>
         </div>
 
@@ -282,7 +282,7 @@
       <div class="w-100">
         <div style="position: -webkit-sticky;width: 100%;height: 80px;background-color: #f8bb2c;top: 0;font-size: 28px; color:#FFFFFF;">
           競選政見有做到嗎？網路輿情分析，看看呱吉被大家討論的事件都是什麼
-          <div style="font-size: 24px;">問政品質人人稱讚，那有人考慮過內容是否有用嗎？</div>
+          <div style="font-size: 24px;">「問政品質人人稱讚，那有人考慮過內容是否有用嗎？」</div>
         </div>
         <div id='301' style="height: 80px;font-size: 8px;color: #FFFFFF;"></div>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -301,13 +301,16 @@
             <div class="subheading mb-3">(3) 評論提及量</div>
             <img src="./fig/25.png" width="100%">
             <div class="subheading mb-3">B. 以總體內文作為分群對象</div>
-            <p>我們希望能根據內文將Po文分群，並且分析其中的事件，因此這邊採用兩種方法做特徵的提取：</p>
+            <p>我們希望針對有提到呱吉的貼文做分析，首先需要了解貼文有哪些類型的內容，並且分析其中的事件，因此這邊採用兩種方法做文章的特徵的提取，並且做分群將這些文章歸類：</p>
             <div class="subheading mb-3">(1) Embedding-base：BERT分群</div>
             <div class="subheading mb-3"><h5>以PCA將文章向量降為兩維後的結果</h5></div>
+            <p>每個點即代表每篇文章，在圖中越近就代表文章內容越相似</p>
             <div style="text-align: center;"><img src="./fig/26.png" width="80%"></div>
             <div class="subheading mb-3"><h5>以TSNE將文章向量降為兩維後的結果</h5></div>
+            <p>每個點即代表每篇文章，在圖中越近就代表文章內容越相似</p>
             <div style="text-align: center;"><img src="./fig/27.png" width="80%"></div>
             <div class="subheading mb-3">(2) 以關聯規則提取特徵</div>
+            <p>每個點即代表每篇文章，如果文章內容到一定的相似度就會產生鍵結</p>
             <img src="./fig/28.png" width="100%">
             <p>我們可以從上述結果發現，關聯規則幾乎無法找到相關性，原因在於關聯規則計算次數須為完全一樣的詞才能算一次，而在BERT當中只要有相似字即可代表有相關性，因此BERT可以將內文的關聯顯示出來，並且再降維時，TSNE又比PCA更好的將群分開，因此我們選擇用TSNE降維完的Embedding做接下來的處理</p>
             <div class="subheading mb-3">(3) K-Means 分群</div>
@@ -319,14 +322,14 @@
             <p>以向量的Cosine-similarity計算兩者相似度</p>
             <div class="subheading mb-3">D. 以文字雲顯示四個群體的討論內容</div>
             <p>至於這邊可以用count-base的原因在於，討論兩個主體時字詞會是一樣的例如：柯文哲開工大巨蛋；柯文哲動工大巨蛋，在取出同樣字詞中是可行的主要使count-base相關性降低的原因在於形容詞、副詞這類取代性相對高的詞語</p>
-            <h6>Cluster1主要著重於柯文哲與呱吉的質詢，就如同上面所統計的結果柯文遮出現的次數在本群文章中最高，並且也可以看到"質詢","問題"字樣相對也較大，因此我們之後也會將其特別拿出來看提到的問題指的是何種問題</h6>
-            <div style="text-align: center;"><img src="./fig/31.png" width="80%"></div>
-            <h6>Cluster2主要幾乎沒有在討論市政有關的事情，幾乎都是直播、影片、大港開唱等等貼文，我們後續也會針對呱吉大港開唱事件作分析</h6>
-            <div style="text-align: center;"><img src="./fig/32.png" width="80%"></div>
-            <h6>Cluster3非常明顯與施工、偷渡、包廂這幾個關鍵字有關，很明顯是在說明大巨蛋事件，後續會再追蹤呱吉針對大巨蛋事件的質詢</h6>
-            <div style="text-align: center;"><img src="./fig/33.png" width="80%"></div>
-            <h6>Cluster4的內容就顯得相對較為雜亂，但還是可以看到一些關鍵詞例如老樹、白粉、松山信義等等，之後會根據這些關鍵詞做後續的追蹤</h6>
-            <div style="text-align: center;"><img src="./fig/34.png" width="80%"></div>
+            <h6>Cluster1：主要著重於柯文哲與呱吉的質詢，就如同上面所統計的結果柯文遮出現的次數在本群文章中最高，並且也可以看到"質詢","問題"字樣相對也較大，因此我們之後也會將其特別拿出來看提到的問題指的是何種問題</h6>
+            <img src="./fig/31.png" width="100%">
+            <h6>Cluster2：主要幾乎沒有在討論市政有關的事情，幾乎都是直播、影片、大港開唱等等貼文，我們後續也會針對呱吉大港開唱事件作分析</h6>
+            <img src="./fig/32.png" width="100%">
+            <h6>Cluster3：非常明顯與施工、偷渡、包廂這幾個關鍵字有關，很明顯是在說明大巨蛋事件，後續會再追蹤呱吉針對大巨蛋事件的質詢</h6>
+            <img src="./fig/33.png" width="100%">
+            <h6>Cluster4：的內容就顯得相對較為雜亂，但還是可以看到一些關鍵詞例如老樹、白粉、松山信義等等，之後會根據這些關鍵詞做後續的追蹤</h6>
+            <img src="./fig/34.png" width="100%">
             <div class="subheading mb-3">E. 呱吉事件分析</div>
             <p>
               1. 公共住宅問題<br>
@@ -352,7 +355,7 @@
             <div style="text-align: center;"><img src="./fig/40.png" width="80%"></div>
             <p>可以看到超過90%的網民都不支持此事件，且後續只要提到呱吉，許多網民就會在底下留言呼籲呱吉需要為白粉事件道歉</p>
             <div class="subheading mb-3">(4) 大港開唱事件</div>
-            <p>此事件於九月爆發開來，由於脫褲子、嗆韓國瑜等等拖續行為對年輕人來說，根本不是什麼大事情，也有許多網民認為只是韓國瑜團隊在大做文章(p.s. 也有可能是大家討厭韓國瑜的程度遠大於呱吉)</p>
+            <p>此事件於九月爆發開來，由於脫褲子、嗆韓國瑜等等脫序行為對年輕人來說，根本不是什麼大事情，也有許多網民認為只是韓國瑜團隊在大做文章(p.s. 也有可能是大家討厭韓國瑜的程度遠大於呱吉)</p>
             <img src="./fig/41.png" width="100%">
             <div style="text-align: center;"><img src="./fig/42.png" width="80%"></div>
             <p>可以看到此事件多數網民認為呱吉於大港開唱事件並非正式場合，且對於台下觀眾的反應也沒有不悅，因此認為次事件為呱吉被惡意抹黑及造謠</p>
@@ -378,7 +381,7 @@
             <div style="text-align: center;"><img src="./fig/45.png" width="80%"></div>
             <div class="subheading mb-3">C. 文字雲呈現</div>
             <p>可以看到各種正面評語都出現在了文字雲中，"專業"、"清楚"、"正常"、"理性"、"水準"，都代表著對呱吉問政表現的稱讚</p>
-            <div style="text-align: center;"><img src="./fig/46.png" width="80%"></div>
+            <img src="./fig/46.png" width="100%">
           </div>
         </div>
       </div>
